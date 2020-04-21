@@ -23,7 +23,6 @@ let io = socket(server)
 
 io.set('origins', '*:*')
 io.on("connection", (socket) => {
-    // console.log('New connection established: ' + socket.id)
     const data = '[****' + emoji.get('pizza') + '++++]' + ' Welcome to the edge of the internet. Niaje buda!'
     io.emit('Fuckery', data)
 
